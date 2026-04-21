@@ -1,0 +1,4 @@
+student_id,name,age,gender,email,program
+1,nazia,20,M,nazia@example.com,BSCS
+2,Sarah Johnson,19,F,sarah@example.com,BSSE
+3,Mike Wilson,21,M,mike@example.com,BBA

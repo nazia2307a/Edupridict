@@ -1,0 +1,44 @@
+{
+  "admin": {
+    "password": "admin123",
+    "role": "admin",
+    "name": "Super Admin",
+    "email": "admin@edupredict.com",
+    "created": "2024-01-01"
+  },
+  "anu": {
+    "name": "anaya khan",
+    "email": "anaya@gmail.com",
+    "role": "admin",
+    "password": "scrypt:32768:8:1$lz6n5p1WhGLmTZzH$ea1b18666ce7fb4727ef876ee7f1d766039231962be9599a016e11cce6d45970010c2f66975c3e73bf1c09a147b8fa0782037af01352bef14ca2d29ded756eda",
+    "created": "2026-04-07 12:51"
+  },
+  "sami": {
+    "name": "sami",
+    "email": "sami@gmail.com",
+    "role": "admin",
+    "password": "scrypt:32768:8:1$wqsfkR60nzczkFr2$7d18f452a3f39a142081ec7d916df7ce0bab589ef28a04a662e57559633b6135ddc505ea1a345572cf166643700435ec4cfc5889f5c1dc9240a4a4a5de8057d4",
+    "created": "2026-04-07 12:52"
+  },
+  "raees": {
+    "name": "raees",
+    "email": "raees@gmail.com",
+    "role": "teacher",
+    "password": "scrypt:32768:8:1$VY35um9gK1XTbALT$fbf6f51a695c283f471514fab7f79541ef6184c17aa9314ce51d29eca00cbac61d46f5cd0670fb98f92462e8db94a64f38236bdf83a8cc31adce32068bad6a97",
+    "created": "2026-04-07 12:53"
+  },
+  "nazia": {
+    "name": "nazia",
+    "email": "nazia@gmail.com",
+    "role": "student",
+    "password": "scrypt:32768:8:1$eZdrTXgDjWTqwWnw$604822a20c7f52ac144cef5ca087e7ed0deb6ce4bd94ce6810901218e8229a37a1242944a5e63e08d9cf238a942319fa4093d57b20aa960d47a0102225dbe081",
+    "created": "2026-04-07 12:55"
+  },
+  "noman": {
+    "name": "noman",
+    "email": "noman@gmail.com",
+    "role": "analyst",
+    "password": "scrypt:32768:8:1$MDuft2FOobnykz29$fb889c288fea8fd4c27a91da880d74f5fbdb235a1e1d073cde4dbfc575ee766cfa1bdb9f2ca3bad50bd26b88180b525005ac30c73ca17d6abb38942a82e5a064",
+    "created": "2026-04-14 12:40"
+  }
+}

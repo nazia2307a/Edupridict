@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduPredict Signup</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); margin: 0; height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .signup-box { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); width: 400px; }
+        h2 { text-align: center; color: #333; margin-bottom: 30px; }
+        input, select { width: 100%; padding: 15px; margin: 10px 0; border: 2px solid #eee; border-radius: 8px; box-sizing: border-box; font-size: 16px; }
+        input:focus, select:focus { border-color: #f5576c; outline: none; }
+        button { background: linear-gradient(135deg, #f5576c, #f093fb); color: white; padding: 15px; width: 100%; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; margin: 10px 0; }
+        button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(245,87,108,0.3); }
+        .back { text-align: center; margin-top: 20px; }
+        .back a { color: #f5576c; text-decoration: none; }
+        .flash { padding: 12px; margin: 15px 0; border-radius: 8px; }
+        .flash.success { background: #d4edda; color: #155724; }
+        .flash.error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <div class="signup-box">
+        <h2>👤 Create Account</h2>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <form method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password (6+ chars)" required>
+            <select name="role" required>
+                <option value="">Select Role</option>
+                <option value="admin">Admin</option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+                <option value="analyst">Analyst</option>
+            </select>
+            <button type="submit">Create Account</button>
+        </form>
+        
+        <div class="back">
+            <a href="/">← Back to Login</a>
+        </div>
+    </div>
+</body>
+</html>
